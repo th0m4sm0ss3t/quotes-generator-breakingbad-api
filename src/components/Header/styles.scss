@@ -1,0 +1,51 @@
+@use 'src/styles/vars';
+
+.header {
+  margin: 1.5rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    max-width: 160px;
+    margin-right: vars.$gutter;
+    margin-bottom: vars.$gutter * 2;
+  }
+
+  &__title {
+    font-size: vars.$title-font-size;
+    font-weight: 600;
+    color: vars.$green;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .header {
+    flex-wrap: nowrap;
+
+    &__logo {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    flex-wrap: nowrap;
+
+    &__logo {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header {
+    flex-wrap: nowrap;
+
+    &__logo {
+      margin-bottom: 0;
+    }
+  }
+}

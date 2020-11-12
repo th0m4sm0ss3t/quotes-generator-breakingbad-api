@@ -1,0 +1,19 @@
+@use 'src/styles/vars';
+
+.footer {
+  background-color: vars.$green;
+  text-align: center;
+  font-size: vars.$footer-font-size;
+  padding: vars.$gutter / 1.5;
+  position: relative;
+  bottom: 0;
+
+  &__text, &__link {
+    color: vars.$white;
+    transition: 0.2s;
+  }
+
+  &__link:hover {
+    color: vars.$gray;
+  }
+}

@@ -1,0 +1,97 @@
+@use 'src/styles/vars';
+
+.quotes {
+  background-color: vars.$green;
+  width: 90%;
+  padding: vars.$gutter;
+  color: vars.$white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  
+  &__div {
+    &__text {
+      font-style: italic;
+      min-width: 100%;
+      margin-bottom: vars.$gutter;
+      font-family: vars.$quote-font;
+    }  
+
+    &__author {
+      margin-bottom: vars.$gutter;
+    }
+  }
+  
+  &__divButton{
+    width: 100%;
+
+    &__button {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: vars.$gutter auto 0;
+      padding: vars.$gutter / 5 0;
+      color: vars.$green;
+      background-color: vars.$white;
+      border: 1px solid vars.$gray;
+      border-radius: 10px;
+      text-transform: uppercase;
+      box-shadow: 2px 9px 28px -12px rgba(255, 255, 255, 0.42);
+      transition: 0.2s;
+
+      &__svg {
+        width: 100%;
+        margin-bottom: vars.$gutter / 3;
+      }
+    }
+
+    &__button:hover {
+      background-color: vars.$gray;
+      border: 1px solid vars.$white;
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) {
+.quotes {
+    width: 60%;
+    
+    &__divButton{
+      width: 100%;
+  
+      &__button {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .quotes {
+    width: 60%;
+    
+    &__divButton{
+      width: 100%;
+  
+      &__button {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .quotes {
+    width: 60%;
+    
+    &__divButton{
+      width: 100%;
+  
+      &__button {
+        width: 30%;
+      }
+    }
+  }
+}
